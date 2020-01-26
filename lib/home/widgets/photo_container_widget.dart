@@ -20,7 +20,7 @@ class _PhotoContainerWidgetState extends State<PhotoContainerWidget> {
     showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: Text("SELECIONE UM OPCAO"),
+              title: Text("SELECIONE UM OPÇÃO"),
               actions: <Widget>[
                 FlatButton(
                   child: Text("GALERIA"),
@@ -32,7 +32,7 @@ class _PhotoContainerWidgetState extends State<PhotoContainerWidget> {
                   },
                 ),
                 FlatButton(
-                  child: Text("CAMERA"),
+                  child: Text("CÂMERA"),
                   onPressed: () async {
                     File file =
                         await ImagePicker.pickImage(source: ImageSource.camera);
